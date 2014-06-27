@@ -1,0 +1,77 @@
+{
+  "RDSTemplateFormatVersion" : "2010-09-09",
+
+  "Description" : "Modify RDS template",
+
+  "Parameters" : {
+
+    "allocated-storage": {
+      "Description" : "The new storage capacity of the RDS instance.  Changing this does not result in outage.",
+      "Type": "Boolean"
+    },
+    "db-instance-class": {
+      "Description" : "Indicates compute and memory capacity for DB instance. Changing this does result in outage.",
+      "Type": "String"
+    },
+    "db-security-groups": {
+      "Description" : "Indicates the list of DB security groups to authorize on this DB instance. Changing this does result in outage.  Valid values: db.t1.micro | db.m1.small | db.m1.medium | db.m1.large | db.m1.xlarge | db.m2.xlarge | db.m2.2xlarge | db.m2.4xlarge | db.m3.medium | db.m3.large | db.m3.xlarge | db.m3.2xlarge | db.r3.large | db.r3.xlarge | db.r3.2xlarge | db.r3.4xlarge | db.r3.8xlarge",
+      "Type": "String"
+    },
+   "vpc-security-group-ids": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "apply-immediately": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "master-user-password": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "db-parameter-group-name": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "backup-retention-period": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "preferred-backup-window": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "preferred-maintenance-window": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "multi-az": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "engine-version": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "allow-major-version-upgrade": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "auto-minor-version-upgrade": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "iops": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "option-group-name": {
+      "Description" : "TBD",
+      "Type": "String"
+    },
+   "new-db-instance-identifier": {
+      "Description" : "TBD",
+      "Type": "String"
+    }
+   }
+}
