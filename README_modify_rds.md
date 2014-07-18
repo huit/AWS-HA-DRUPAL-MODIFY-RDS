@@ -63,8 +63,9 @@ DBInstanceIdentifier="instance identifier as listed in AWS console"
 
 PARAM="appropriate parameter value as listed in modify_db_instance_command synopsis.txt"
 
-e.g. export DBInstanceIdentifier=hpacdrupaldb
+e.g. 
 
+     export DBInstanceIdentifier=hpacdrupaldb
      export dbinstanceclass=db.m1.large
 
 NOTE: if --apply-immediate is omitted, any change requiring an outage will take
