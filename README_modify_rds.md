@@ -57,7 +57,7 @@ db-parameter-group-name
 
 Prior to running modify_rds.sh, export the following environment variables:
 
-DBInstanceIdentifier=<<instance identifier as listed in AWS console/RDS>>
+DBInstanceIdentifier=/<instance identifier as listed in AWS console/RDS/>
 
 <<PARAM as listed above with hypens omitted>>=<<appropriate parameter value>>
 
