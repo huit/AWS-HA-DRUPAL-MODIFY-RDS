@@ -18,24 +18,41 @@ $ modify_rds.sh -h
 Usage: aws rds modify-db-instance --db-instance-identifier <DBInstanceIdentifier> --<PARAM> <VALUE> --<PARAM> <VALUE> ...
 
 where DBInstanceIdentifier is the identifier assigned to the instance by AWS,
+
 where PARAM is one of the following:
 
 db-security-groups
+
 vpc-security-group-ids
+
 apply-immediately
+
 allow-major-version-upgrade
+
 master-user-password
+
 backup-retention-period
+
 new-db-instance-identifier
+
 auto-minor-version-upgrade
+
 engine-version
+
 multi-az
+
 iops
+
 preferred-maintenance-window
+
 allocated-storage
+
 db-instance-class
+
 preferred-backup-window
+
 option-group-name
+
 db-parameter-group-name
 
 Prior to running modify_rds.sh, export the following environment variables:
