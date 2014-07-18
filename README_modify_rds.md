@@ -13,7 +13,7 @@ To use this utility, refer to help method within utility by running the followin
 $> ./modify_rds.sh -h
 ```
 
-$ modify_mysql_rds.sh -h
+$ modify_rds.sh -h
 Usage: aws rds modify-db-instance --db-instance-identifier <DBInstanceIdentifier> --<PARAM> <VALUE> --<PARAM> <VALUE> ...
 
 where DBInstanceIdentifier is the identifier assigned to the instance by AWS,
@@ -37,8 +37,12 @@ preferred-backup-window
 option-group-name
 db-parameter-group-name
 
-and VALUE is set via environment variable where
-environment variable name is PARAM with spaces omitted,
+Prior to running modify_rds.sh, export the following environment variables:
+
+DBInstanceIdentifier=<instance identifier as listed in AWS console/RDS>
+
+<PARAM as listed above with hypens omitted>=<appropriate parameter value>
+
 e.g. export dbinstanceclass=db.m1.large
 
 NOTE: if --apply-immediate is omitted, any change requiring an outage will take
@@ -56,8 +60,7 @@ The helper tool needs python 2.7 (which is also a requirement for the AWS cli to
 
 ## Details
 
-As stated, to run the utility you must set first set DBInstanceIdentifier=<DB Instance Identifier as listed in AWS> together with 
-one or more instance parameters as described above.
+As stated above, to run the utility you must set first set DBInstanceIdentifier=<DB Instance Identifier as listed in AWS> together with one or more instance parameters as described above.
 
 
 
