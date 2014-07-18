@@ -61,7 +61,7 @@ Prior to running modify_rds.sh, export the following environment variables:
 
 DBInstanceIdentifier="instance identifier as listed in AWS console"
 
-PARAM="appropriate parameter value"
+PARAM="appropriate parameter value as listed in modify_db_instance_command synopsis.txt"
 
 e.g. export DBInstanceIdentifier=hpacdrupaldb
 
