@@ -17,7 +17,7 @@ $ modify_rds.sh -h
 
 Usage: aws rds modify-db-instance --db-instance-identifier DBInstanceIdentifier --PARAM VALUE --PARAM VALUE ...
 
-where DBInstanceIdentifier is the identifier assigned to the instance by AWS,
+where DBInstanceIdentifier is the identifier assigned to the instance by AWS, and
 
 where PARAM is one of the following:
 
@@ -54,6 +54,8 @@ preferred-backup-window
 option-group-name
 
 db-parameter-group-name
+
+## Environment setup
 
 Prior to running modify_rds.sh, export the following environment variables:
 
