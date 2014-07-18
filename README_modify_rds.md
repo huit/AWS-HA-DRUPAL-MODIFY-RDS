@@ -71,7 +71,9 @@ e.g.
 NOTE: if --apply-immediate is omitted, any change requiring an outage will take
 effect during the next scheduled maintenance window.
 
-To apply a change immediately set environment variable applyimmediately=true
+To apply a change immediately set environment variable applyimmediately as follows:
+
+     export applyimmediately=true
 
 You can also review the list of RDS instance parameters which can be set by running helper tool:
 
