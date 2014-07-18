@@ -14,6 +14,7 @@ $> ./modify_rds.sh -h
 ```
 
 $ modify_rds.sh -h
+
 Usage: aws rds modify-db-instance --db-instance-identifier <DBInstanceIdentifier> --<PARAM> <VALUE> --<PARAM> <VALUE> ...
 
 where DBInstanceIdentifier is the identifier assigned to the instance by AWS,
