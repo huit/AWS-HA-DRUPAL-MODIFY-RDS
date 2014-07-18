@@ -15,7 +15,7 @@ $> ./modify_rds.sh -h
 
 $ modify_rds.sh -h
 
-Usage: aws rds modify-db-instance --db-instance-identifier <DBInstanceIdentifier> --<PARAM> <VALUE> --<PARAM> <VALUE> ...
+Usage: aws rds modify-db-instance --db-instance-identifier DBInstanceIdentifier --PARAM VALUE --PARAM VALUE ...
 
 where DBInstanceIdentifier is the identifier assigned to the instance by AWS,
 
@@ -57,11 +57,12 @@ db-parameter-group-name
 
 Prior to running modify_rds.sh, export the following environment variables:
 
-DBInstanceIdentifier=/<instance identifier as listed in AWS console/RDS/>
+DBInstanceIdentifier="instance identifier as listed in AWS console"
 
-<<PARAM as listed above with hypens omitted>>=<<appropriate parameter value>>
+PARAM="appropriate parameter value"
 
-e.g. export dbinstanceclass=db.m1.large
+e.g. export DBInstanceIdentifier=hpacdrupaldb
+     export dbinstanceclass=db.m1.large
 
 NOTE: if --apply-immediate is omitted, any change requiring an outage will take
 effect during the next scheduled maintenance window.
